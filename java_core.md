@@ -23,9 +23,9 @@ Parameterized constructor is used to provide different values to the distinct ob
  - static variable gets memory only once in class area at the time of class loading.
 
 7. #####What is static method?
-- A static method belongs to the class rather than object of a class.
-- A static method can be invoked without the need for creating an instance of a class.
-- static method can access static data member and can change the value of it.
+ - A static method belongs to the class rather than object of a class.
+ - A static method can be invoked without the need for creating an instance of a class.
+ - static method can access static data member and can change the value of it.
 
 8. #####Why main method is static?
 because object is not required to call static method if It were non-static method,jvm creats object first then call main() method that will lead to the problem of extra memory allocation
