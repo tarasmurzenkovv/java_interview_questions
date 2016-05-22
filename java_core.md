@@ -29,3 +29,22 @@ Parameterized constructor is used to provide different values to the distinct ob
 
 8. #####Why main method is static?
 because object is not required to call static method if It were non-static method,jvm creats object first then call main() method that will lead to the problem of extra memory allocation
+
+9. #####What is difference between static (class) method and instance method?
+
+|static or class method   |instance method|
+|---|---|
+|A method i.e. declared as static is known as static method.  |A method i.e. not declared as static is known as instance method.|
+|Object is not required to call static method.|Object is required to call instance methods.|
+|Non-static (instance) members cannot be accessed in static context (static method, static block and static nested class) directly.|static and non-static variables both can be accessed in instance methods.|
+|For example: public static int cube(int n){ return n*n*n;}|For example: public void msg(){...}.|
+
+### Inheritance
+1. #####What is this in java?
+It is a keyword that that refers to the current object
+2. #####Why multiple inheritance is not supported in java?
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+
+Consider a scenario where A, B and C are three classes. The C class inherits A and B classes. If A and B classes have same method and you call it from child class object, there will be ambiguity to call method of A or B class.
+
+Since compile time errors are better than runtime errors, java renders compile time error if you inherit 2 classes. So whether you have same method or different, there will be compile time error now.
